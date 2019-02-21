@@ -30,6 +30,7 @@ public class ListUsersActivity extends AppCompatActivity {
         Firebase.setAndroidContext(this);
         Ref = new Firebase("https://bookapp-c0f06.firebaseio.com/");
         UserList = (ListView) findViewById(R.id.mPeopleList);
+
         textView = (TextView) findViewById(R.id.tv);
         Intent intent = getIntent();
         title = intent.getStringExtra("title");
